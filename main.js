@@ -186,11 +186,12 @@ function moveEnemy() {
 						let content = score.innerHTML;
 						function backHtml() {
 							score.innerHTML = content;
+							inMenu.play();
 						}
 						score.textContent = "Ты побил рекорд";
 						jungleWin.play();
 						inMenu.pause();
-						setTimeout(backHtml, 2000);
+						setTimeout(backHtml, 2500);
 					
 					}
 				} else {
