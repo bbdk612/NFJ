@@ -88,8 +88,9 @@ function startGame() {
 		enemy.classList.add("enemy");
 		enemy.y = -100 * setting.traffic * (i + 1);
 		enemy.style.top = enemy.y + "px";
+		let randomEnemy = Math.floor(Math.random() * 3) + 1;
 		enemy.style.background =
-			"transparent url('./img/enemy2.png') center / cover no-repeat";
+			`transparent url('./img/enemy${randomEnemy}.png') center / cover no-repeat`;
 		gameArea.appendChild(enemy);
 	}
 
