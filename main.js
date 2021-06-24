@@ -178,6 +178,8 @@ function moveEnemy() {
 			carRect.bottom >= enemyRect.top){
 				crash.play();
 				setting.start = false; 
+				start.classList.remove('hide');
+				start.style.top = score.offsetHeight + "px";
 				if (localStorage.getItem('the_best')){
 					if (setting.score > localStorage.getItem('the_best')){
 						localStorage.setItem('the_best', setting.score);
@@ -193,15 +195,14 @@ function moveEnemy() {
 					localStorage.setItem('the_best', setting.score);
 				}
 				// console.warn('OH, NO!');
-				start.classList.remove('hide');
 				
-				start.style.top = score.offsetHeight + "px";
 				
 		
 			// inGame.pause();
 			// inMenu.play();
 			// console.log(start.style.top, score.offsetHeight);
-		}}
+				}
+		}
 
 		enemy.y += setting.speed / 2;
 		enemy.style.top = enemy.y + "px";
