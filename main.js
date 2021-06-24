@@ -191,6 +191,7 @@ function moveEnemy() {
 
 						setTimeout(backHtml, 2000);
 					
+					}
 				} else {
 					localStorage.setItem('the_best', setting.score);
 				}
@@ -201,7 +202,6 @@ function moveEnemy() {
 			// inGame.pause();
 			// inMenu.play();
 			// console.log(start.style.top, score.offsetHeight);
-				}
 		}
 
 		enemy.y += setting.speed / 2;
