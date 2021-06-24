@@ -188,7 +188,8 @@ function moveEnemy() {
 							score.innerHTML = content;
 						}
 						score.textContent = "Ты побил рекорд";
-
+						jungleWin.play();
+						inMenu.pause();
 						setTimeout(backHtml, 2000);
 					
 					}
