@@ -210,7 +210,7 @@ function moveEnemy() {
 			enemy.y = -100 * setting.traffic;
 			enemy.style.left = Math.floor(Math.random() * (gameArea.offsetWidth - 50)) + "px";
 		}
-	} )
+	} );
 }
 
 lvl1.addEventListener("click", chooseLvl1);
